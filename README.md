@@ -1,1 +1,7 @@
-# Autoencoders
+# Fraud Detection with Autoencoder
+
+### Introduction
+This project focuses on detecting fraudulent credit card transactions using an autoencoder implemented in PyTorch. Anomaly detection, specifically fraud detection, is critical in financial systems where fraudulent activities are rare compared to legitimate transactions. The autoencoder is a type of neural network designed to learn an efficient representation of data by reconstructing input data and is particularly useful for identifying anomalies based on reconstruction errors.
+
+### Task Description & Conclusion
+The task involves training an autoencoder to model normal transaction patterns and identify deviations that indicate potential fraud. The model utilizes PyTorch's nn.MSELoss() to minimize reconstruction error and determine anomalies based on a set threshold. The evaluation of the model's performance revealed a recall of 88.95% and an F1 score of 90.30%, indicating strong detection of true anomalies. While precision is at 91.69%, suggesting a high rate of true positive detections, further improvements could enhance its effectiveness. Future updates may focus on refining the detection threshold or integrating advanced techniques to better balance precision and recall
